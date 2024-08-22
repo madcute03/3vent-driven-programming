@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table-border {
+            width: 30%;
+        }
+
+        .bordered {
+            border: 1px dashed #333;
+        }
+
+        .span-2 {
+            padding: 5px 7px;
+            width: 30%;
+            text-align:center;
+        }
+
+        .p-left {
+            padding-left:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h4>DIfferent Types of mouse Event</h4>
+        <table class="table-border">
+            <tbody>
+                <tr>
+                    <td class="bordered span-2">
+                            <button id="mouse-click">CLick ME</button>
+                        
+                    </td>
+                    <td class="bordered p-left">
+                        Fired when user clicks an emelents.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                            
+                            <button id ="double-click">double click me</button>
+                    </td>
+                    <td class="bordered p-left">
+                        Fired when user dbclicks an emelents.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                            
+                            <button id ="md">mouse down event</button>
+                    </td>
+                    <td class="bordered p-left">
+                        Fired when user mousedownclicks an emelents.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                            
+                            <button id ="mup">mouseUp event</button>
+                    </td>
+                    <td class="bordered p-left">
+                        fired when the user release the mouse button
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                            
+                            <button id ="mover">mouseover</button>
+                    </td>
+                    <td class="bordered p-left">
+                        fired when the user moves the mouse over an elememnts
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                            
+                            <button id ="mout">mouseout</button>
+                    </td>
+                    <td class="bordered p-left">
+                        fired when the moves the mouse out of an elements
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                            
+                            <button id ="mmove">mousemove</button>
+                    </td>
+                    <td class="bordered p-left">
+                        fired when the use moves the mouse over an element.
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+    </div>
+    <script>
+            const mouseclick = document.getElementById('mouse-click');
+            mouseclick.addEventListener('click', () =>{
+                alert('you click button');
+            });
+
+            const dbclick = document.getElementById('double-click');
+            dbclick.addEventListener('dblclick', () =>{
+                alert('fired when the user clicks an elements');
+            });
+            const mousedown = document.getElementById('md');
+            mousedown.addEventListener('mousedown', () =>{
+                alert('fired when the user process the mousedown');
+            });
+            const mouseup = document.getElementById('mup');
+            mouseup.addEventListener('mouseup', () =>{
+                alert('fired when the user release the mouseup');
+            });
+            const mouseover = document.getElementById('mover');
+            mouseover.addEventListener('mouseover', () =>{
+                alert('fired when the user release the mouseover');
+            });
+            const mouseout = document.getElementById('mout');
+            mouseout.addEventListener('mouseout', () =>{
+                alert('fired when the user moves the mouseout');
+            });
+            const mousemove = document.getElementById('mmove');
+            mousemove.addEventListener('mousemove', () =>{
+                alert('fired when the user moves the mousemove');
+            });
+
+    </script>
+</body>
+</html>
